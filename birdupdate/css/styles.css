@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-size: 16px;
+    color: #2C2D35;
+}
+
+.header{
+    background-color: #E1EDE6;
+}
+
+.container{
+    max-width: 1130px;
+
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    padding-top: 33px;
+    padding-bottom: 32px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    gap: 0 60px;
+}
+
+.menu__link{
+    color: #2C2D35;
+}
+
+.menu__item:hover,
+.menu__link:hover{
+    color: #598D66;
+}
+
+.menu__item:focus,
+.menu__link:focus{
+    background-color: #D4E8D9;
+    outline: none;
+}
+
+.menu__item:active,
+.menu_item:active{
+    color: #376B44;
+}
+
+.main__inner .bird__image{
+    flex: 1;
+
+    width: 100%;
+    height: auto;
+}
+
+.main__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0 30px;
+}
+
+.text__block{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.text__block text:nth-child(1){
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 3.75rem;
+}
+
+.text__block .ink__color{
+    color: #598D66;
+}
+
+.text__block text:nth-child(2){
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 150%;
+
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+    color: #86928B;
+}
+
+.text__block .button{
+    padding: 21px 60px;
+
+    width: fit-content;
+
+    background-color: white;
+    border: 1px solid #598D66;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    color: #598D66;
+}
+
+.button:hover{
+    color: #F4F6F5;
+    background-color: #598D66;
+}
+
+.button:focus{
+    background-color: #D4E8D9;
+}
+
+.button:active{
+    color: #FFFFFF;
+    background-color: #376B44;
+}
+
+@media (max-width: 1200px){
+    .container{
+        max-width: 690px;
+        padding: 0;
+    }
+
+    .header__inner{
+        font-size: 1.125rem;
+
+        padding: 0 39px;
+        padding-top: 33px;
+        padding-bottom: 32px;
+    }
+    
+    .menu__item{
+        margin: auto 0;
+    }
+
+    .main__inner .bird__image{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text__block text:nth-child(1){
+        font-size: 2.5rem;        
+    }
+
+    .text__block text:nth-child(2){
+        padding-bottom: 40px;
+    }
+}
