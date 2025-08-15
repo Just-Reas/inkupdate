@@ -34,6 +34,10 @@ body{
     padding-bottom: 32px;
 }
 
+.line{
+    display: none;
+}
+
 .menu{
     display: flex;
     align-items: center;
@@ -77,6 +81,7 @@ body{
     align-items: center;
 
     gap: 0 30px;
+    padding-top: 50px;
 }
 
 .text__block{
@@ -136,10 +141,9 @@ body{
     background-color: #376B44;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 768px){
     .container{
         max-width: 690px;
-        padding: 0;
     }
 
     .header__inner{
@@ -154,6 +158,10 @@ body{
         margin: auto 0;
     }
 
+    .menu__list{
+        gap: 0 20px;
+    }
+
     .main__inner .bird__image{
         max-width: 100%;
         height: auto;
@@ -165,5 +173,140 @@ body{
 
     .text__block text:nth-child(2){
         padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 530px;
+    }
+
+    .header__inner{
+        flex-direction: column;
+        gap: 16px;
+
+        padding: 16px 0;
+    }
+
+    .header-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .line{
+        display: flex;
+
+        border-top: 1px solid #C3D1C6;
+    }
+
+    .menu__list{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        position: relative;
+        gap: 20px;
+
+    }
+
+    .menu__list li:nth-child(4){
+        position: absolute;
+        right: 0;
+    }
+
+    .text__block text:nth-child(1){
+        font-size: 2.25rem;        
+    }
+
+    .text__block text:nth-child(2){
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+
+    .main__inner{
+        display: flex;
+        justify-content: start;
+    }
+
+    
+
+    .main__inner .text__block{
+        flex: 1;
+        width: 100%;
+    }
+
+    .main__inner .bird__image{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main_inner .bird__image img{
+        width: 100%;
+        height: auto;
+
+    }
+
+    .text__block .button{
+        padding: 14.5px 41px;
+
+        font-size: 1.125rem;
+    }
+
+}
+
+@media (max-width: 320px){
+    .container{
+        max-width: 320px;
+    }
+
+    .main__inner{
+        padding-top: 60px;
+    }
+
+    .main__inner .bird__image{
+        display: none;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .menu{
+        padding: 16px 15px;
+    }
+
+    .text__block text:nth-child(1){
+        font-size: 1.875rem;        
+    }
+
+    .text__block text:nth-child(2){
+        font-size: 0.875rem;
+        padding-top: 20px;
+        padding-bottom: 40px;        
+    }
+
+    .header__inner{
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 0px;
+    }
+
+    .header__inner .header-logo{
+        background-color: #FFFFFF;
+
+        padding-top: 17px;
+        padding-bottom: 16px;
+    }
+
+    .header .container{
+        padding: 0 0;
+        margin: 0;
+    }
+
+    .text__block .button{
+        padding: 14.5px 29px;
+
+        font-size: 1.125rem;
     }
 }
