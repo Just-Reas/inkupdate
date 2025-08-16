@@ -11,6 +11,10 @@ body{
     color: #2C2D35;
 }
 
+.burger__menu{
+    display: none;
+}
+
 .header{
     background-color: #E1EDE6;
 }
@@ -141,15 +145,14 @@ body{
     background-color: #376B44;
 }
 
-@media (max-width: 768px){
+@media (max-width: 1440px){
     .container{
-        max-width: 690px;
+        max-width: 710px;
     }
 
     .header__inner{
         font-size: 1.125rem;
 
-        padding: 0 39px;
         padding-top: 33px;
         padding-bottom: 32px;
     }
@@ -159,7 +162,7 @@ body{
     }
 
     .menu__list{
-        gap: 0 20px;
+        gap: 0 60px;
     }
 
     .main__inner .bird__image{
@@ -176,7 +179,7 @@ body{
     }
 }
 
-@media (max-width: 576px){
+@media (max-width: 768px){
     .container{
         max-width: 530px;
     }
@@ -205,7 +208,7 @@ body{
         justify-content: flex-start;
         flex-wrap: nowrap;
         position: relative;
-        gap: 20px;
+        gap: 60px;
 
     }
 
@@ -255,11 +258,21 @@ body{
 
 }
 
-@media (max-width: 320px){
-    .container{
-        max-width: 320px;
+@media (max-width: 576px){
+    main .container{
+        max-width: 310px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 
+    .header .container{
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .header{
+        background-color: #E1EDE6;
+    }
     .main__inner{
         padding-top: 60px;
     }
@@ -287,26 +300,65 @@ body{
     }
 
     .header__inner{
-        padding-top: 0;
-        padding-bottom: 0;
+        align-items: center;
+        width: 100%;
+
+        padding: 0;
         gap: 0px;
     }
 
     .header__inner .header-logo{
+        width: 100%;
+
         background-color: #FFFFFF;
 
         padding-top: 17px;
         padding-bottom: 16px;
     }
 
-    .header .container{
-        padding: 0 0;
-        margin: 0;
-    }
 
     .text__block .button{
         padding: 14.5px 29px;
 
         font-size: 1.125rem;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .burger__menu{
+        max-width: 320px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        padding: 16px 15px;
+    }
+
+    .burger__link{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .burger__button{
+        color: #4C5866;
+    }
+
+    .burger__button:hover,
+    .burger__link:hover{
+        color: #598D66;
+    }
+    
+    .burger__button:focus
+    .burger__link:focus{
+        background-color: #D4E8D9;
+        outline: none;
+    }
+    
+    .burger__button:active
+    .burger__link:active{
+        color: #376B44;
     }
 }
