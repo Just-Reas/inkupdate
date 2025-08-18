@@ -146,10 +146,6 @@ body{
 }
 
 @media (max-width: 1440px){
-    .container{
-        max-width: 710px;
-    }
-
     .header__inner{
         font-size: 1.125rem;
 
@@ -259,8 +255,7 @@ body{
 }
 
 @media (max-width: 576px){
-    main .container{
-        max-width: 310px;
+    .container{
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -328,7 +323,6 @@ body{
     }
 
     .burger__menu{
-        max-width: 320px;
         width: 100%;
         align-items: center;
         display: flex;

@@ -1,0 +1,261 @@
+.reproducts__inner{
+    margin-top: 70px;
+}
+
+.reproducts__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reproducts__header .reproducts__txt{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.reproducts__header .reproducts__buttons{
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    gap: 32px;
+
+}
+
+.reproducts__header .reproducts__buttons button{
+    background-color: #D4E8D9;
+    
+    border-radius: 20px;
+    border: 2px solid #D4E8D9;
+
+    padding: 10px 20px;
+}
+
+.reproducts__header .reproducts__buttons button:hover{
+    color: #F4F6F5;
+    background-color: #598D66;
+    border-color: #598D66;
+}
+
+.reproducts__header .reproducts__buttons button:focus{
+    border-color: #598D66;
+}
+
+.reproducts__header .reproducts__buttons button:active{
+    color: #F4F6F5;
+    background-color: #376B44;
+    border-color: #376B44;
+
+}
+
+.reproducts__main{
+    margin-top: 30px;
+}
+
+.reproducts__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    
+    gap: 30px 30px;
+}
+
+.reproducts__item{
+    background-color: #E1EDE6;
+}
+
+.reproducts__container{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.reproducts__container img{
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+
+
+}
+
+.author__txt{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    white-space: nowrap;
+
+    color: #86928B;
+
+    padding-top: 20px;
+}
+
+.name__txt{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.875rem;
+
+    white-space: nowrap;
+
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.size__txt{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    white-space: nowrap;
+}
+
+.price__txt{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    color: #598D66;
+
+    white-space: nowrap;
+
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.confirm{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    white-space: nowrap;
+
+    color: #598D66;
+    background-color: #E1EDE6;
+
+    padding: 20px 60px;
+    
+    border: 1px solid #598D66;
+}
+
+.confirm:hover{
+    background-color: #598D66;
+    color: #F4F6F5;
+}
+
+.confirm:focus{
+    background-color: #D4E8D9;
+    border: 1px solid #598D66;
+}
+
+.confirm:active{
+    color: #F4F6F5;
+    background-color: #376B44;
+}
+
+@media (max-width:1440px) {
+    .reproducts__inner{
+        margin: 70px auto;
+    }
+
+    .reproducts__list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .reproducts__header .reproducts__txt{
+        font-size: 1.875rem;
+    }
+
+}
+
+@media (max-width:768px){
+    .reproducts__inner{
+        margin: 50px auto;
+    }
+
+    .reproducts__item{
+        max-width: 240px;
+    }
+
+    .reproducts__header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .reproducts__header .reproducts__buttons{
+        display: flex;
+        justify-content: start;
+        font-size: 1.125rem;
+    }
+
+    .author__txt{
+        font-size: 1rem;
+
+        padding-top: 15px;
+    }
+
+    .name__txt{
+        font-size: 1.5rem;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .size__txt{
+        font-size: 1rem;
+    }
+
+    .price__txt{
+        font-size: 1.25rem;
+
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .confirm{
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width:576px){
+    .reproducts__inner{
+        margin: 60px auto;
+    }
+
+    .reproducts__list{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);
+
+    }
+
+    .reproducts__item{
+        max-width: none;
+    }
+
+    .reproducts__buttons {
+        overflow-x: auto; 
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+        
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    
+    .reproducts__buttons::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .reproducts__buttons button {
+        display: inline-block;
+        flex-shrink: 0;
+    }
+}
