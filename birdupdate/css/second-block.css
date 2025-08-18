@@ -159,7 +159,7 @@
     background-color: #376B44;
 }
 
-@media (max-width:1440px) {
+@media (max-width:992px) {
     .reproducts__inner{
         margin: 70px auto;
     }
@@ -178,10 +178,6 @@
 @media (max-width:768px){
     .reproducts__inner{
         margin: 50px auto;
-    }
-
-    .reproducts__item{
-        max-width: 240px;
     }
 
     .reproducts__header{
