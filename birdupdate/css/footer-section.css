@@ -34,7 +34,7 @@
     }
 
     .third__footer__shadow{
-        border-bottom: 1px solid #C3D1C6;
+        border-bottom: 1px solid var(--border-color);
         padding-bottom: 20px;
     }
 }
@@ -101,11 +101,16 @@
 
 
 .footer__contacts a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 1.25rem;
 }
 
 .footer__contacts text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 1.125rem;
+
     color: var(--gray-color);
 }
 
@@ -118,7 +123,7 @@
 
 @media screen and (max-width:768px){
     .second__footer{
-        border-bottom: 1px solid #C3D1C6;
+        border-bottom: 1px solid var(--border-color);
         padding-bottom: 16px;
     }
 }
@@ -139,10 +144,15 @@
 }
 
 .footer__main{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
     font-size: 1.25rem;
 }
 
 .footer__item{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     font-size: 1.125rem;
     text-decoration: none;
 
@@ -197,6 +207,9 @@
 }
 
 .link__text{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
     padding-top: 6px;
     font-size: 0.75rem;
 }

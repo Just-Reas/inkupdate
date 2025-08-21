@@ -1,32 +1,5 @@
-@import url("./reset.css");
 @import url("./first-block.css");
 @import url("./second-block.css");
 @import url("./promo-block.css");
 @import url("./about-block.css");
 @import url("./footer-section.css");
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-
-body{
-    font-size: 16px;
-    color: #2C2D35;
-}
-
-.container{
-    max-width: 1130px;
-
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-:root{
-    --green-color: #E1EDE6;
-    --gray-color: #86928B;
-}

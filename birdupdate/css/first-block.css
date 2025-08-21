@@ -4,7 +4,11 @@
 }
 
 .header{
-    background-color: #E1EDE6;
+    background-color: var(--green-color);
+}
+
+.header.hide {
+    transform: translateY(-100%);
 }
 
 .header__inner{
@@ -34,23 +38,23 @@
 }
 
 .menu__link{
-    color: #2C2D35;
+    color: var(--main-color);
 }
 
 .menu__item:hover,
 .menu__link:hover{
-    color: #598D66;
+    color: var(--green-normal-color);
 }
 
 .menu__item:focus,
 .menu__link:focus{
-    background-color: #D4E8D9;
+    background-color: var(--green-light-color);
     outline: none;
 }
 
 .menu__item:active,
 .menu_item:active{
-    color: #376B44;
+    color: var(--green-dark-color);
 }
 
 .main__inner .bird__image{
@@ -75,17 +79,17 @@
     flex-direction: column;
 }
 
-.text__block text:nth-child(1){
+.text__block .text__block__one{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 3.75rem;
 }
 
 .text__block .ink__color{
-    color: #598D66;
+    color: var(--green-normal-color);
 }
 
-.text__block text:nth-child(2){
+.text__block .text__block__two{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.125rem;
@@ -103,27 +107,27 @@
     width: fit-content;
 
     background-color: white;
-    border: 1px solid #598D66;
+    border: 1px solid var(--green-normal-color);
 
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.25rem;
 
-    color: #598D66;
+    color: var(--green-normal-color);
 }
 
 .button:hover{
     color: #F4F6F5;
-    background-color: #598D66;
+    background-color: var(--green-normal-color);
 }
 
 .button:focus{
-    background-color: #D4E8D9;
+    background-color: var(--green-light-color);
 }
 
 .button:active{
-    color: #FFFFFF;
-    background-color: #376B44;
+    color: var(--white-color);
+    background-color: var(--green-dark-color);
 }
 
 @media (max-width: 1440px){
@@ -147,11 +151,11 @@
         height: auto;
     }
 
-    .text__block text:nth-child(1){
+    .text__block .text__block__one{
         font-size: 2.5rem;        
     }
 
-    .text__block text:nth-child(2){
+    .text__block .text__block__two{
         padding-bottom: 40px;
     }
 }
@@ -173,7 +177,7 @@
     .line{
         display: flex;
 
-        border-top: 1px solid #C3D1C6;
+        border-top: 1px solid var(--border-color);
     }
 
     .menu__list{
@@ -191,11 +195,11 @@
         right: 0;
     }
 
-    .text__block text:nth-child(1){
+    .text__block .text__block__one{
         font-size: 2.25rem;        
     }
 
-    .text__block text:nth-child(2){
+    .text__block .text__block__two{
         font-size: 1rem;
         padding-top: 10px;
         padding-bottom: 11px;
@@ -244,7 +248,7 @@
     }
 
     .header{
-        background-color: #E1EDE6;
+        background-color: var(--green-color);
     }
     .main__inner{
         padding-top: 60px;
@@ -262,11 +266,11 @@
         padding: 16px 15px;
     }
 
-    .text__block text:nth-child(1){
+    .text__block .text__block__one{
         font-size: 1.875rem;        
     }
 
-    .text__block text:nth-child(2){
+    .text__block .text__block__two{
         font-size: 0.875rem;
         padding-top: 20px;
         padding-bottom: 40px;        
@@ -283,7 +287,7 @@
     .header__inner .header-logo{
         width: 100%;
 
-        background-color: #FFFFFF;
+        background-color: var(--white-color);
 
         padding-top: 17px;
         padding-bottom: 16px;
@@ -315,22 +319,22 @@
     }
 
     .burger__button{
-        color: #4C5866;
+        color: var(--gray-dark-color);
     }
 
     .burger__button:hover,
     .burger__link:hover{
-        color: #598D66;
+        color: var(--green-normal-color);
     }
     
     .burger__button:focus
     .burger__link:focus{
-        background-color: #D4E8D9;
+        background-color: var(--green-light-color);
         outline: none;
     }
     
     .burger__button:active
     .burger__link:active{
-        color: #376B44;
+        color: var(--green-dark-color);
     }
 }

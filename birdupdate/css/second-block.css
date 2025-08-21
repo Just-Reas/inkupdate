@@ -26,28 +26,28 @@
 }
 
 .reproducts__header .reproducts__buttons button{
-    background-color: #D4E8D9;
+    background-color: var(--green-light-color);
     
     border-radius: 20px;
-    border: 2px solid #D4E8D9;
+    border: 2px solid var(--green-light-color);
 
     padding: 10px 20px;
 }
 
 .reproducts__header .reproducts__buttons button:hover{
-    color: #F4F6F5;
-    background-color: #598D66;
-    border-color: #598D66;
+    color: var(--white-second-color);
+    background-color: var(--green-normal-color);
+    border-color: var(--green-normal-color);
 }
 
 .reproducts__header .reproducts__buttons button:focus{
-    border-color: #598D66;
+    border-color: var(--green-normal-color);
 }
 
 .reproducts__header .reproducts__buttons button:active{
-    color: #F4F6F5;
-    background-color: #376B44;
-    border-color: #376B44;
+    color: var(--white-second-color);
+    background-color: var(--green-dark-color);
+    border-color: var(--green-dark-color);
 
 }
 
@@ -63,8 +63,10 @@
     gap: 30px 30px;
 }
 
-.reproducts__item{
-    background-color: #E1EDE6;
+.reproducts__item,
+.reproducts__item__two,
+.reproducts__item__three{
+    background-color: var(--green-color);
 }
 
 .reproducts__container{
@@ -92,7 +94,7 @@
 
     white-space: nowrap;
 
-    color: #86928B;
+    color: var(--gray-color);
 
     padding-top: 20px;
 }
@@ -121,7 +123,7 @@
     font-weight: 500;
     font-size: 1.5rem;
 
-    color: #598D66;
+    color: var(--green-normal-color);
 
     white-space: nowrap;
 
@@ -136,27 +138,27 @@
 
     white-space: nowrap;
 
-    color: #598D66;
-    background-color: #E1EDE6;
+    color: var(--green-normal-color);
+    background-color: var(--green-color);
 
     padding: 20px 60px;
     
-    border: 1px solid #598D66;
+    border: 1px solid var(--green-normal-color);
 }
 
 .confirm:hover{
-    background-color: #598D66;
-    color: #F4F6F5;
+    background-color: var(--green-normal-color);
+    color: var(--white-second-color);
 }
 
 .confirm:focus{
-    background-color: #D4E8D9;
-    border: 1px solid #598D66;
+    background-color: var(--green-light-color);
+    border: 1px solid var(--green-normal-color);
 }
 
 .confirm:active{
-    color: #F4F6F5;
-    background-color: #376B44;
+    color: var(--white-second-color);
+    background-color: var(--green-dark-color);
 }
 
 @media (max-width:992px) {
@@ -232,7 +234,9 @@
 
     }
 
-    .reproducts__item{
+    .reproducts__item,
+    .reproducts__item__two,
+    .reproducts__item__three{
         max-width: none;
     }
 

@@ -1,0 +1,39 @@
+@import url("./reset.css");
+
+@font-face{
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-size: 16px;
+    color: #2C2D35;
+}
+
+.container{
+    max-width: 1130px;
+
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+:root{
+    --main-color: #2C2D35;
+    --white-color: #FFFFFF;
+    --white-second-color: #F4F6F5;
+    --green-color: #E1EDE6;
+    --green-light-color: #D4E8D9;
+    --green-normal-color: #598D66;
+    --green-dark-color: #376B44;
+    --gray-color: #86928B;
+    --gray-dark-color: #4C5866;
+    --border-color: #C3D1C6;
+    --yellow-color: #EEDB6D;
+    --yellow-light-color: #FAEB97;
+    --yellow-normal-color: #D9B949;
+    --yellow-dark-color: #A38314;
+}
